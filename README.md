@@ -5,6 +5,8 @@ Este es el repositorio para las diapositivas de
 [mis charlas](http://jsanz.github.com/slides-201204-foss4gba/)
 en el [FOSS4GBA](http://www.foss4g.org.ar/).
 
+[Jorge Sanz](http://jorgesanz.net)
+
 
 Taller de Introducción a MapProxy
 ---------------------------------
@@ -50,5 +52,3 @@ gvSIG 2.0 - novedades
 
 [Diapositivas](http://jsanz.github.com/slides-201204-foss4gba/gvsig2/)
 
-
-[Jorge Sanz](http://jorgesanz.net)
