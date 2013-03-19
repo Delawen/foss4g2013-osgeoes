@@ -110,6 +110,8 @@ Color de strong #eee8d5
 .aprender .reveal .state-background{
   background: #002b36 url('imgs/aprender.jpg') no-repeat center center;
 }
-
+.gracias .reveal .state-background{
+  background: #002b36 url('imgs/gracias.jpg') no-repeat center center;
+}
 
 

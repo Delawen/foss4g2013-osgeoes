@@ -1,0 +1,58 @@
+/* Colores por tema */
+
+/* beige
+
+Color de fondo #f7f3de o #002b36
+Color de strong #eee8d5
+
+*/
+.reveal section .no-back{
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal section strong{
+  color: #eee8d5; /*para beige*/
+}
+
+.reveal section .bordes img {
+  max-height: 170px;
+  max-width: 150px;
+  min-height: 170px;
+}
+.reveal section .bordes div {
+  display: inline-block;
+  margin: 10px 40px;
+}
+
+.reveal blockquote:before {
+  content: '\00AB';
+}
+.reveal blockquote:after {
+  content: '\00BB';
+}
+
+
+/* Diapos con fondo */
+
+.reveal section .hBox{
+  background-color: #f7f3de;
+  background-color: rgba(247, 243, 222, 0.95); /* para beige */
+  padding: 25px;
+  color: #333333; /* para beige */
+}
+.reveal .hBoxTop{
+  top:-380px !important;
+}
+
+/**
+.como-funciona-esto .reveal .state-background{
+  background: #002b36 url('imgs/organizar.jpg') no-repeat center center;
+}
+**/
+
+.gracias .reveal .state-background{
+  background: #f7f3de url('../geoinquietos/imgs/gracias.jpg') no-repeat center center;
+}
+
