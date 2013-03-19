@@ -1,0 +1,26 @@
+.reveal section img.no-back{
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+.reveal section strong{
+	color: #eee8d5; /*para moon*/
+}
+
+.reveal section .bordes img {
+	max-height: 170px;
+	max-width: 150px;
+	min-height: 170px;
+}
+.reveal section .bordes div {
+	display: inline-block;
+	margin: 10px 40px;
+}
+
+	.reveal blockquote:before {
+		content: '\00AB';
+	}
+	.reveal blockquote:after {
+		content: '\00BB';
+	}
