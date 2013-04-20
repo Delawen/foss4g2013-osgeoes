@@ -1,1 +1,371 @@
-En construcci&oacute;n
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="es">
+<head>
+  <title>OSGeo Live</title>
+
+  <meta name="author" content="Jorge Gaspar Sanz Salinas" >
+  <meta name="description" content=  "OSGeo Live en el FOSS4G Buenos Aires 2013">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=1024">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link type="text/css" rel="stylesheet" href="css/charla.css"></link>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9508776-10']);
+    _gaq.push(['_setDomainName', 'jorgesanz.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+
+<body class="impress-not-supported">
+  <div class="banner"></div>
+
+  <div id="impress">
+    <div class="fallback-message">
+      <p>Your browser <b>doesn't support the features required</b> by
+      impress.js, so you are presented with a simplified version of this
+      presentation.</p>
+
+      <p>For the best experience please use the latest <b>Chrome</b>,
+      <b>Safari</b> or <b>Firefox</b> browser. Upcoming version 10 of Internet
+      Explorer <i>should</i> also handle it.</p>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="5">
+      <img src="imgs/osgeo-live-logo1.png" width="200"
+        alt="Logo de OSGeo Live" class="right" />
+      <h1>OSGeo Live</h1>
+      <h2>
+        <em>&laquo;Probando todo sin instalar nada&raquo;</em>
+      </h2>
+
+      <p class="evento"><a target="_blank" href="http://www.foss4g.org.ar/">
+            FOSS4G Buenos Aires 2013</a></p>
+      <p class="yo">
+        Jorge Sanz · <a href="mailto:jsanz@osgeo.org">jsanz@osgeo.org</a> ·
+        <a href="http://twitter.com/xurxosanz" target="_blank" title="Jorge en twitter">@xurxosanz</a>
+      </p>
+    </div>
+
+    <!-- AGENDA  -->
+    <div id="agenda" class="step" data-x="-1600" data-y="1800">
+      <h2>Agenda</h2>
+
+      <ul class="discs larger">
+        <li><strong>Qué</strong> es OSGeo Live</li>
+        <li>Más que un DVD
+        <ul><li>El caso de <strong>OSGeo-es</strong></li></ul>
+        </li>
+        <li>Cómo participa un proyecto
+        <ul><li>El caso de <strong>gvSIG</strong></li></ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- QUÉ ES OSGEO LIVE -->
+
+  <div class="step section" id="quees" data-x="-3000" data-y="500" data-scale="4">
+    <h2>¿Qué es OSGeo Live?</h2>
+  </div>
+
+   <div class="step" id="wordle" data-x="-3000" data-y="0" data-scale="1" data-rotate="180">
+    <blockquote>
+    <strong>Imagen de un sistema operativo Linux (Xubuntu) cargado de FOSS4G</strong>
+    </blockquote>
+    <p class="center fade-in">
+      <img src="imgs/wordle.png" width="750" height="462" alt="OSGeo Live wordle" />
+    </p>
+   </div>
+
+   <div class="step" id="historia" data-x="-4200" data-y="0" data-scale="1" data-rotate="180">
+    <h2>Historia</h2>
+    <ul>
+      <li>Ricardo Pinho lanza GISVM en 2007</li>
+      <li>Fechas de publicación por eventos:
+        <ul class="discs smaller">
+          <li><strong>2.0</strong> FOSS4G Sydney (Arramagong) (30/09/09)</li>
+          <li><strong>3.0</strong>  Int. Surveyors Conference - Australia (21/03/10)</li>
+          <li><strong>4.0.1</strong> FOSS4G Barcelona (27/08/10)</li>
+          <li><strong>4.5</strong> OSGIS 2010, FOSSGIS 2010 (14/03/10)</li>
+          <li><strong>5.0</strong>  FOSS4G Denver (28/08/11)</li>
+          <li><strong>5.5</strong>  SIG Libre 2012, FOSGIS 2012 (25/02/12)</li>
+          <li><strong>6.0</strong>  OSGIS 2012 (21/08/12)</li>
+          <li><strong>6.5</strong> FOSS4GBA 2013!! (20/03/2013)</li>
+        </ul>
+      </li>
+    </ul>
+   </div>
+
+   <div class="step" data-x="-4200" data-y="-800" data-scale="1" data-rotate="180">
+        <h2>Actividad en OSGeo</h2>
+
+    <ul class="discs">
+      <li>Formalmente en el comité de <strong>marketing</strong></li>
+      <li>
+          <img class="right fade-in" src="imgs/cameron.jpg" width="200" alt="Cameron" />
+      Gestionado en <strong>comunidad</strong>,
+          liderado por <a href="http://cameron.shorter.net/"
+          target="_blank" title="Web de Cameron">Cameron Shorter</a></li>
+    </ul>
+   </div>
+
+   <div class="step" data-x="-4200" data-y="-1100" data-scale="1" data-rotate="180">
+    <blockquote>Participan desarrolladores, empaquetadores y <em>power users</em></blockquote>
+    <ul class="discs fade-in">
+      <li>Esfuerzo distribuido entre muchos</li>
+      <li>VM optimizada</li>
+    </ul>
+   </div>
+
+   <div class="step hide" id="pantallazo1" data-x="-3000" data-y="-1100" data-scale="1" data-rotate="180">
+    <p><img src="imgs/web1.png" width="800" height="600" alt="" /></p>
+    <p class="center larger"><a class="noframe" href="http://live.osgeo.org" target="_blank" title="Web de OSGeo Live">
+      http://live.osgeo.org</a></p>
+   </div>
+   <div class="step hide" id="pantallazo2" data-x="-3000" data-y="-1100" data-scale="1" data-rotate="180">
+    <p><img src="imgs/web2.png" width="800" height="600" alt="" /></p>
+    <p class="center larger"><a class="noframe" href="http://live.osgeo.org" target="_blank" title="Web de OSGeo Live">
+      http://live.osgeo.org</a></p>
+   </div>
+   <div class="step hide" id="pantallazo3" data-x="-3000" data-y="-1100" data-scale="1" data-rotate="180">
+    <p><img src="imgs/web3.png" width="800" height="600" alt="" /></p>
+    <p class="center larger"><a class="noframe" href="http://live.osgeo.org" target="_blank" title="Web de OSGeo Live">
+      http://live.osgeo.org</a></p>
+   </div>
+
+   <div id="contenidos" class="step" data-x="-3000" data-y="-2300" data-scale="1" data-rotate="180">
+    <table summary="Contenido del live"><tbody>
+      <tr><td class="bordebajo" colspan="2">
+        <strong>Software:</strong>
+      </td></tr>
+      <tr>
+        <td>
+          <ul>
+            <li>SIG de escritorio: 7</li>
+            <li>SIG web: 6</li>
+            <li>Servidores: 13</li>
+            <li>Almacenes de datos: 4</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Navegación y mapas: 5</li>
+            <li>Herramientas espaciales: 8</li>
+            <li>Aplicaciones verticales: 6</li>
+          </ul>
+        </td>
+      </tr>
+      <tr><td class="bordebajo" colspan="2">
+        <strong>Datos:</strong>
+      </td></tr>
+      <tr>
+        <td colspan="2">
+          <ul>
+            <li>Natural Earth</li>
+            <li>OSGeo North Carolina</li>
+            <li>Muestra de OpenStreetMap</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody></table>
+    <div><p class="smaller right">
+      <a target="_blank" title="Contents"
+      href="http://live.osgeo.org/en/overview/overview.html">Contenido de OSGeo Live</a>
+    </p>
+    </div>
+   </div>
+
+
+
+   <!-- PARTICIPACIÓN DE OSGEO-ES -->
+   <div class="step section" id="osgeoes" data-x="-650" data-y="-2400" data-scale="4">
+    <h2>Participación de OSGeo-es</h2>
+
+    <p class="smaller">
+      Capítulo local de la comunidad <br/>
+      hispano-hablante de OSGeo<br/>
+      <a target="_blank" class="noframe" href="http://es.osgeo.org">http://es.osgeo.org</a>
+    </p>
+    <div class="center">
+      <img src="imgs/osgeo-es.png" width="250" alt="OSGeo-es"/>
+    </div>
+  </div>
+
+   <div class="step" data-x="800" data-y="-2400" data-scale="1" data-rotate="-90">
+    <h2>Traducción de la documentación de OSGeo Live</h2>
+    <ul class="discs">
+      <li><strong>60</strong> <em>resúmenes</em> ej.
+        <a href="http://live.osgeo.org/es/overview/rasdaman_overview.html"
+        target="_blank" title="Overview de Rasdaman">Rasdaman</a></li>
+      <li><strong>52</strong> <em>guías de inicio rápido</em> ej.
+        <a href="http://live.osgeo.org/es/quickstart/openlayers_quickstart.html"
+        target="_blank" title="Quick Start de Open Layers">Open Layers</a></li>
+      <li>High participation: <strong>20</strong>
+        <a href="http://live.osgeo.org/es/sponsors.html#translators"
+        target="_blank" title="Traductores de OSGeo Live">colaboradores</a> </li>
+    </ul>
+  </div>
+   <div class="step" data-x="1200" data-y="-2400" data-scale="1" data-rotate="-90">
+    <blockquote>
+      <strong>La clave de nuestro éxito</strong>: <br> facilitar el trabajo a los traductores
+    </blockquote>
+
+    <blockquote class="fade-in">
+      <strong>¿Cómo?</strong>:  <br> gracias al <strong>apoyo técnico</strong> de colaboradores
+    </blockquote>
+  </div>
+
+   <div class="step" data-x="1800" data-y="-2400" data-scale="1" data-rotate="-90">
+    <div class="center">
+      <img src="imgs/stats.png" title="statistics"><br/>
+      <a class="noframe" href="http://adhoc.osgeo.osuosl.org/livedvd/lang_stats.html" target="_blank" alt="Statistics">
+        Competición entre los equipos de traducción
+      </a>
+    </div>
+  </div>
+
+   <!--  PARTICIPACIÓN DE GVSIG -->
+   <div class="step section" id="gvsig" data-x="4000" data-y="-2000" data-scale="4">
+    <h2>Participación de gvSIG</h2>
+  </div>
+
+   <div class="step" data-x="3300" data-y="-1700" data-scale="2">
+   <blockquote>¿Cómo se participa en OSGeo Live?</blockquote>
+  </div>
+
+   <div class="step hide" data-x="3300" data-y="-1300" data-scale="1">
+    <p class="center"><img src="imgs/apply.png" alt="Aplicar a OSGeo Live" /></p>
+    <p class="center"><a class="noframe" href="http://wiki.osgeo.org/wiki/Live_GIS_Disc_Apply"
+      target="_blank" title="How to apply to OSGeo Live">
+      wiki.osgeo.org/wiki/Live_GIS_Disc_Apply</a></p>
+   </div>
+
+
+   <div class="step" data-x="4800" data-y="-1700" data-scale="2">
+    <blockquote>¿Qué tareas se requieren para participar en el proyecto?</blockquote>
+  </div>
+
+   <div class="step" data-x="4700" data-y="-1100" data-scale="1">
+    <h2>Documentación</h2>
+    <ul class="discs">
+      <li><em><a href="http://live.osgeo.org/en/overview/gvsig_overview.html"
+        target="_blank" title="gvSIG Overview">
+          Resumen</a></em> </li>
+      <li><a href="http://live.osgeo.org/en/quickstart/gvsig_quickstart.html"
+        target="_blank" title="gvSIG Quickstart"> Guía de inicio rápido</a></li>
+    </ul>
+    <p class="center">
+      <a href="http://live.osgeo.org/en/quickstart/gvsig_quickstart.html"
+        target="_blank" title="gvSIG Quickstart">
+        <img src="imgs/gvsig-quickstart.png" style="height:400px;"  alt="gvSIG Quickstart" />
+      </a>
+    </p>
+  </div>
+
+   <div class="step hide empaquetado" data-x="4700" data-y="-200" data-scale="1">
+      <div class="mismaaltura">
+      <h2>Empaquetado</h2>
+      <p>Paquete Debian de gvSIG 1.11 para
+        <a href="http://canaima.softwarelibre.gob.ve/"
+        target="_blank" name="Canaima Linux">
+        Canaima GNU/Linux</a> basado en un trabajo
+        previo de <a href="http://www.scolab.es/"
+        target="_blank" title="Software Colaborativo">
+        Software Colaborativo</a>
+      </p>
+      <ul class="discs">
+        <li>Compatible con <a href="http://openjdk.java.net/"
+          target="_blank" title="Web de OpenJDK">
+            OpenJDK</a> 1.6</li>
+        <li>Sin <em>drivers</em> propietarios: ECW y MrSID</li>
+      </ul>
+      <p class="center fade-in"><img src="imgs/canaima.png" alt="Canaima Linux" /></p>
+    </div>
+  </div>
+
+
+   <div class="step hide empaquetado" data-x="4700" data-y="-200" data-scale="1">
+    <div class="mismaaltura">
+      <h2>Empaquetado</h2>
+      <p>Creación del <em>script</em> de instalación</p>
+      <ul class="discs">
+        <li>instalación del .deb y otros recursos</li>
+        <li>instalar un proyecto por defecto</li>
+        <li>...</li>
+      </ul>
+      <p class="center fade-in"><img src="imgs/gvsig-script.png" height="200" alt="gvSIG Script" /></p>
+    </div>
+  </div>
+
+
+   <div class="step section" id="accion" data-x="3350" data-y="1300" data-scale="4">
+      <h2>Pero no hemos terminado...<br/> <strong class="fade-in">os necesitamos</strong></h2>
+  </div>
+
+
+   <div class="step accion" id="accion-osgeo" data-x="3680" data-y="1700" data-scale="1" data-rotate="90">
+      <h2>En OSGeo-es (y OSGeo-pt)</h2>
+      <ul class="discs">
+        <li><strong>traduciendo</strong> resúmenes y guías de inicio</li>
+        <li>es una forma diferente de <strong>aprender</strong></li>
+      </ul>
+
+      <p class="center"><a href="http://www.flickr.com/photos/legofenris/4003590489/"
+        title="The Empire Wants You!!! by leg0fenris, on Flickr">
+        <img src="imgs/empire.jpg"
+        width="412" height="337" alt="The Empire Wants You!!!"></a></p>
+  </div>
+
+   <div class="step accion" id="accion-gvsig" data-x="3400" data-y="1700" data-scale="1" data-rotate="90">
+      <p class="center"><a href="http://www.flickr.com/photos/legofenris/4003590489/"
+        title="The Empire Wants You!!! by leg0fenris, on Flickr">
+        <img src="imgs/empire.jpg"
+        width="412" height="337" alt="The Empire Wants You!!!"></a></p>
+      <h2>En gvSIG</h2>
+      <p>
+        Puedes ayudarnos a <strong>mejorar el proyecto</strong> de demostración añadiendo
+      datos y ejemplos de simbología, <em>layouts</em>, etc
+      </p>
+  </div>
+
+
+
+    <div id="gracias" class="step section" data-x="800" data-y="2200" data-scale="4">
+      <h1>¡Muchas gracias!</h1>
+      <h2>¿Preguntas?</h2>
+      <div style="margin-top:100px;"><p>Licencia</p>
+            <a class="noframe" href="http://creativecommons.org/licenses/by-sa/3.0/deed.es" title="cc-by-sa">
+              <img style="height:80px;" src="./imgs/cc-by-sa.png">
+            </a></div>
+    </div>
+  </div>
+
+  <!--<div class="hint">
+    <p>Use the sapcebar or the arrow keys to navigate</p>
+  </div>-->
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="./resources/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="./resources/impress/js/impress.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){
+  if ("ontouchstart" in document.documentElement) {
+    $(".hint").innerHTML = "<p>Touch left or right to browse<\/p>";
+  }
+  impress().init();
+  });
+  //]]>
+  </script>
+</body>
+</html>
