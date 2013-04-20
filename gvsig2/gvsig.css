@@ -56,3 +56,9 @@ Color de strong #eee8d5
   background: #f7f3de url('../geoinquietos/imgs/gracias.jpg') no-repeat center center;
 }
 
+
+.logo-foss4g{
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+}
