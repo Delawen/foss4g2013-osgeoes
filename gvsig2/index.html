@@ -39,7 +39,8 @@
 
     <div class="reveal">
 
-      <!-- Any section element inside of this container is displayed as a slide -->
+      <!-- Any section element inside of this container
+           is displayed as a slide -->
       <div class="slides">
 
         <section>
@@ -59,7 +60,9 @@
         <section>
           <h2>Jorge Sanz</h2>
           <ul>
-            <li>Trabajo en <a href="http://www.prodevelop.es">Prodevelop</a></li>
+            <li>Trabajo en
+              <a href="http://www.prodevelop.es">Prodevelop</a>
+            </li>
             <li><a href="http://twitter.com/xurxosanz">@xurxosanz</a></li>
             <li>Participo en:
             <ul>
@@ -78,62 +81,245 @@
               </ul>
             </li>
           </ul>
-          <img src="../geoinquietos/imgs/jsanz.jpg" style="float: right; max-width: 250px;"/>
+          <img src="../geoinquietos/imgs/jsanz.jpg"
+            style="float: right; max-width: 250px;"/>
+
+          <aside class="notes">
+            Presentación centrándome en mi participación en
+            gvSIG en los últimos años.
+          </aside>
         </section>
 
         <!-- charla -->
         <section>
-          <h2>¿Qué es gvSIG Desktop?</h2>
+          <h2>¿Qué es gvSIG?</h2>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Aplicaciones:
+              <span class="fragment">gvSIG Desktop</span>
+              <span class="fragment">, Mobile</span>
+              <span class="fragment">y Mini</span></li>
+            <li class="fragment">Proyecto de <em>software</em> libre:
+              <a href="http://gvsig.org">http://gvsig.org</a></li>
+            <li class="fragment">Asociación gvSIG:
+              <a href="http://gvsig.com">http://gvsig.com</a></li>
           </ul>
+
+          <aside class="notes">
+            <p>Como gvSIG en realidad son tres conceptos diferentes que
+              hay que saber diferenciar, y cómo cada parte ha ido
+              evolucionando en el tiempo.</p>
+
+            <p>En esta charla hablaré del producto gvSIG Desktop.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>¿Qué es gvSIG Desktop?</h2>
+          <img src="imgs/gvsig_desktop.png" style="height:500px;">
         </section>
         <section>
           <h2>¿Qué era gvSIG Desktop en 2008?</h2>
+          <p style="text-align:left;">Producto:</p>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="fragment">maduro</li>
+            <li class="fragment">grande</li>
+            <li class="fragment">difícil de mantener
+              <ul>
+                <li class="fragment">Alta complejidad</li>
+                <li class="fragment">Alto acoplamiento</li>
+                <li class="fragment">Pequeños cambios = alto impacto</li>
+              </ul>
+            </li>
           </ul>
         </section>
         <section>
           <h2>¿Cómo solucionar esto?</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <h3 class="fragment grow">Refactorización <em>grande</em></h3>
         </section>
         <section>
           <h2>Refactorización de gvSIG</h2>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>El acceso a datos: el motor de gvSIG</li>
+            <li>Creación de nuevas APIs</li>
+            <li>Separación estricta de API e implementación</li>
+            <li>Capa de compatibilidad para gvSIG Mobile</li>
+            <li class="fragment">Mucho más costosa de lo esperado</li>
+          </ul>
+          <aside class="notes">
+            <p>Se ha reescrito entre otras cosas toda la capa de acceso a datos
+              alfanuméricos, vectoriales y raster. Se ha definido una API
+              coherente para todo el acceso a datos de tal forma que los nuevos
+              <em>drivers</em> que se creen se harán usando esta API.</p>
+            <p>La separación estricta de las APIs (algo así como un contrato
+              que establece un componente con el resto de componentes del
+              sistema) y las implementaciones permiten mejorar o sustituir
+              componentes enteros del sistema sin que ello afecte al sistema
+              en su conjunto.</p>
+            <p>Además la API nueva se ha creado de tal forma que tanto gvSIG
+              Desktop como gvSIG Mobile la comparten de tal forma que el
+              desarrollo para ambos componentes es muy parecido.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Ventajas de la nueva arquitectura</h2>
+          <ul>
+            <li>Corrección de errores</li>
+            <li class="fragment">Versiones más frecuentes</li>
+            <li class="fragment">
+                Menos impacto<br/>
+                <span class="fragment">= menor tiempo de desarrollo<br/></span>
+                <span class="fragment">= menor coste</span></li>
+            <li class="fragment">Nuevas aplicaciones</li>
+          </ul>
+          <aside class="notes">
+              <p>Se han corregido errores durante la refactorización. La alta
+                modularidad y separación de API e Impl permitirán versiones
+                más frecuentes de solo los componentes que hayan cambiado,
+                pudiendo además controlar mucho mejor el impacto de los cambios
+              </p>
+              <p>Además al reducir el impacto de los cambios se abaratarán los
+                costes de las correcciones y mejoras al reducirse el tiempo
+                de desarrollo de los mismos.</p>
+              <p>La alta modularidad de gvSIG permite construir mucho más
+                fácilmente nuevas aplicaciones que usan componentes de gvSIG
+                en su código.</p>
+            </aside>
+        </section>
+        <section>
+          <h2>No solo una refactorización</h2>
+          <ul>
+            <li>Reestructuración del sistema de construcción: maven</li>
+            <li>Nuevas funcionalidades</li>
           </ul>
         </section>
         <section>
-          <h2>mvn clean compile test install deploy</h2>
+          <h2>Maven</h2>
+          <p class="fragment grow highlight-red">Pantallazo de sitio maven</p>
+          <aside class="notes">
+            <p>El uso de maven como mecanismo de construcción permite una
+              mayor automatización de muchos procesos de gvSIG que van desde
+              la creación de binarios, testeo, creación de sitios web
+              descriptivos, etc.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Funcionalidades</h2>
+          <table class="nuevas-funcionalidades">
+            <tr>
+              <th style="width:80%;">Algunos ejemplos....</th>
+              <th>1.12</th>
+              <th>2.0</th>
+            </tr>
+            <tr>
+              <td>Leyenda tartas y barras</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tabla en mapa</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Importar/exportar símbolos</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Administrador complementos</td>
+              <td>-</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>CSV</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NETCDF</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Datos multitemporales</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Metadata management</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Network analysis</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>WMTS</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Raster tile cache</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+          </table>
+          <aside class="notes">
+            <p></p>
+            <p></p>
+          </aside>
+        </section>
+        <section>
+          <h2>Nuevo instalador</h2>
+          <aside class="notes">
+            <p>Instalación a la carta</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Gestor de complementos</h2>
+          <aside class="notes">
+            <p>Distribuciones personalizadas, actualizaciones parciales</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Scripting</h2>
+          <aside class="notes">
+            <p>Mejor aprovechamiento de las nuevas APIs, nuevo compositor
+              y gestor de scripts</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Mejoras en raster</h2>
+          <ul>
+            <li>Refactorización 2.0</li>
+            <li>Cache de datos raster en teselas</li>
+            <li>Visualización en teselas</li>
+            <li>Reproyeccíón</li>
+            <li>Nuevos servicios: OSM/WMTS/PostGIS Raster/NetCDF</li>
+            <li>Mejoras en InfoByPoint y gestión de ROIs</li>
+          </ul>
+          <aside class="notes">
+            <p></p>
+          </aside>
+        </section>
+        <section>
+          <h2>Gráficas</h2>
           <ul>
             <li></li>
             <li></li>
             <li></li>
-          </ul>
-        </section>
-        <section>
-          <h2>Nueuvas funcionalidades</h2>
-          <ul>
-            <li></li>
-            <li></li>
             <li></li>
           </ul>
+          <aside class="notes">
+            Nuevo tipo de documento, basado en tablas o en datos complejos
+            provenientes de la extensión de sensores (tiempo).
+          </aside>
         </section>
         <section>
           <h2>¿Dónde estamos ahora?</h2>
           <ul>
-            <li></li>
+            <li>gvSIG 2.0 ya </li>
             <li></li>
             <li></li>
           </ul>

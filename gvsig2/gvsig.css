@@ -62,3 +62,11 @@ Color de strong #eee8d5
   bottom: 10px;
   right: 10px;
 }
+
+table.nuevas-funcionalidades th{
+  font-weight: 700;
+  border-bottom: 5px solid black;
+}
+table.nuevas-funcionalidades td{
+  border-bottom: 1px solid black;
+}
