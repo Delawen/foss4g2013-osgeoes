@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="gvsig.css">
 
     <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="../reveal.js/css/highlight/zenburn.css">
+
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
@@ -46,6 +47,8 @@
         <section>
           <h1>gvSIG Desktop 2.0</h1>
           <h3>Novedades y motivaciones</h3>
+
+          <img src="imgs/buffer.png" alt="gvSIG 2.0 splash">
 
           <p>
             <a href="http://bit.ly/foss4gba-gvsig2 ">
@@ -74,16 +77,19 @@
             <li><a href="http://osm.org">OSM</a>
             </ul>
             </li>
+            <!--
             <li>Escribo en:
               <ul>
                 <li><a href="http://geomaticblog.net">geomaticblog.net</a></li>
                 <li><a href="http://jorgesanz.net">jorgesanz.net</a></li>
               </ul>
             </li>
+            -->
           </ul>
+          <!--
           <img src="../geoinquietos/imgs/jsanz.jpg"
             style="float: right; max-width: 250px;"/>
-
+          -->
           <aside class="notes">
             Presentación centrándome en mi participación en
             gvSIG en los últimos años.
@@ -94,13 +100,13 @@
         <section>
           <h2>¿Qué es gvSIG?</h2>
           <ul>
-            <li>Aplicaciones:
+            <li><strong>Aplicaciones</strong>:
               <span class="fragment">gvSIG Desktop</span>
               <span class="fragment">, Mobile</span>
               <span class="fragment">y Mini</span></li>
-            <li class="fragment">Proyecto de <em>software</em> libre:
+            <li class="fragment"><strong>Proyecto</strong> de <em>software</em> libre:
               <a href="http://gvsig.org">http://gvsig.org</a></li>
-            <li class="fragment">Asociación gvSIG:
+            <li class="fragment"><strong>Asociación</strong> gvSIG:
               <a href="http://gvsig.com">http://gvsig.com</a></li>
           </ul>
 
@@ -121,28 +127,28 @@
           <p style="text-align:left;">Producto:</p>
           <ul>
             <li class="fragment">maduro</li>
-            <li class="fragment">grande</li>
-            <li class="fragment">difícil de mantener
+            <li class="fragment"><strong>grande</strong></li>
+            <li class="fragment"><strong>difícil</strong> de mantener
               <ul>
                 <li class="fragment">Alta complejidad</li>
                 <li class="fragment">Alto acoplamiento</li>
-                <li class="fragment">Pequeños cambios = alto impacto</li>
+                <li class="fragment">Pequeños cambios = <strong>alto impacto</strong></li>
               </ul>
             </li>
           </ul>
         </section>
         <section>
           <h2>¿Cómo solucionar esto?</h2>
-          <h3 class="fragment grow">Refactorización <em>grande</em></h3>
+          <h3 class="fragment grow">Refactorización <span class="fragment highlight-red"><em>grande</em></span></h3>
         </section>
         <section>
           <h2>Refactorización de gvSIG</h2>
           <ul>
-            <li>El acceso a datos: el motor de gvSIG</li>
+            <li>El acceso a datos: el <strong>motor</strong> de gvSIG</li>
             <li>Creación de nuevas APIs</li>
-            <li>Separación estricta de API e implementación</li>
+            <li>Separación <strong>estricta</strong> de API e implementación</li>
             <li>Capa de compatibilidad para gvSIG Mobile</li>
-            <li class="fragment">Mucho más costosa de lo esperado</li>
+            <li class="fragment">Mucho <strong>más costosa</strong> de lo esperado</li>
           </ul>
           <aside class="notes">
             <p>Se ha reescrito entre otras cosas toda la capa de acceso a datos
@@ -163,11 +169,11 @@
           <h2>Ventajas de la nueva arquitectura</h2>
           <ul>
             <li>Corrección de errores</li>
-            <li class="fragment">Versiones más frecuentes</li>
+            <li class="fragment">Versiones <strong>más frecuentes</strong></li>
             <li class="fragment">
                 Menos impacto<br/>
                 <span class="fragment">= menor tiempo de desarrollo<br/></span>
-                <span class="fragment">= menor coste</span></li>
+                <span class="fragment">= <strong>menor coste</strong></span></li>
             <li class="fragment">Nuevas aplicaciones</li>
           </ul>
           <aside class="notes">
@@ -187,13 +193,16 @@
         <section>
           <h2>No solo una refactorización</h2>
           <ul>
-            <li>Reestructuración del sistema de construcción: maven</li>
+            <li>Reestructuración del sistema de gestión de código:
+              <strong>maven</strong></li>
             <li>Nuevas funcionalidades</li>
           </ul>
         </section>
         <section>
           <h2>Maven</h2>
-          <p class="fragment grow highlight-red">Pantallazo de sitio maven</p>
+          <p> <a href="http://devel.gvsig.org/sites/org.gvsig.tools/3.0.0/org.gvsig.tools/">
+              http://devel.gvsig.org/sites/org.gvsig.tools/3.0.0/org.gvsig.tools/</a></p>
+          <img src="imgs/maven-tools.png" style="height:500px;"/>
           <aside class="notes">
             <p>El uso de maven como mecanismo de construcción permite una
               mayor automatización de muchos procesos de gvSIG que van desde
@@ -245,7 +254,7 @@
               <td>X</td>
             </tr>
             <tr>
-              <td>Metadata management</td>
+              <td>Gestión de metadatos</td>
               <td></td>
               <td>X</td>
             </tr>
@@ -272,31 +281,51 @@
         </section>
         <section>
           <h2>Nuevo instalador</h2>
+          <img src="imgs/instalador.png" alt="Nuevo instalador para gvSIG">
           <aside class="notes">
             <p>Instalación a la carta</p>
           </aside>
         </section>
         <section>
           <h2>Gestor de complementos</h2>
+          <img src="imgs/complementos.png"  style="height:500px;"
+            alt="Nuevo gestor de complementos para gvSIG">
           <aside class="notes">
             <p>Distribuciones personalizadas, actualizaciones parciales</p>
           </aside>
         </section>
         <section>
           <h2>Scripting</h2>
+          <img src="imgs/scripting.png" alt="Editor de scripts integrado en gvSIG" style="height:600px;">
           <aside class="notes">
             <p>Mejor aprovechamiento de las nuevas APIs, nuevo compositor
               y gestor de scripts</p>
           </aside>
         </section>
         <section>
+          <h2>Scripting</h2>
+          <pre><code>def main():
+  layer = currentLayer()
+
+  emax = 0.0
+  emin = 0.0
+
+  for feature in layer.features():
+    if feature.ELEVATION > emax :
+      emax = feature.ELEVATION
+    if feature.ELEVATION < emin or emin == 0.0:
+      emin = feature.ELEVATION
+  msgbox("máximum Elevation= %s and minimum= %s" % (emax, emin),
+         "Elevation", 0)</code>1</pre>
+        </section>
+        <section>
           <h2>Mejoras en raster</h2>
           <ul>
-            <li>Refactorización 2.0</li>
-            <li>Cache de datos raster en teselas</li>
-            <li>Visualización en teselas</li>
-            <li>Reproyeccíón</li>
-            <li>Nuevos servicios: OSM/WMTS/PostGIS Raster/NetCDF</li>
+            <li><em>Cache</em> de datos raster en teselas</li>
+            <li>Visualización en <strong>teselas</strong></li>
+            <li><strong>Reproyección</strong></li>
+            <li>Nuevos <strong>servicios</strong>:
+              OSM/WMTS/PostGIS Raster/NetCDF</li>
             <li>Mejoras en InfoByPoint y gestión de ROIs</li>
           </ul>
           <aside class="notes">
@@ -305,12 +334,7 @@
         </section>
         <section>
           <h2>Gráficas</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <img src="imgs/graficas.png" alt="Gráficas en gvSIG 2">
           <aside class="notes">
             Nuevo tipo de documento, basado en tablas o en datos complejos
             provenientes de la extensión de sensores (tiempo).
@@ -319,13 +343,17 @@
         <section>
           <h2>¿Dónde estamos ahora?</h2>
           <ul>
-            <li>gvSIG 2.0 ya </li>
-            <li></li>
-            <li></li>
+            <li>gvSIG 2.0 (20<strong>66</strong>)</li>
+            <li>No tan estable como nos gustaría</li>
+            <li>Una <strong>buena base</strong> para conseguir un
+                producto robusto y <strong>confiable</strong></li>
+            <li>Contamos con vuestra ayuda para el <strong>testeo</strong>
+                y <strong>nuevas contribuciones</strong></li>
           </ul>
         </section>
         <!-- Cierre y referencias -->
-        <section data-state="gracias" style="width:400px;padding-left:600px;">
+        <section>
+          <img src="imgs/buffer.png" alt="">
           <div>
             <h2 class="hBox">¡Muchas Gracias!</h2>
           </div>
@@ -347,25 +375,12 @@
         <section>
           <h2>Referencias</h2>
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li>Mejoras en el tratamiento de datos raster en gvSIG 2. Nacho Brodin</li>
+            <li>gvSIG 2.0, un nuevo gvSIG. César Ordiñana</li>
+            <li>Novedades gvSIG 2.0. Álvaro Anguix</li>
+            <li>gvSIG Scripting. Víctor Acevedo</li>
+            <li>Gráficas gvSIG. Fran Peñarrubia</li>
           </ul>
-        </section>
-
-        <section>
-          <h2>Fotografías</h2>
-          <p>
-            <a href=""></a>,
-            <a href=""></a>,
-            <a href=""></a>,
-            <a href=""></a>,
-            <a href=""></a>,
-            <a href=""></a>,
-            <a href=""></a>,
-            <a href="http://www.flickr.com/photos/sammyjammy/1285612321">
-              succes kid</a>
-          </p>
         </section>
 
         <section>
@@ -389,9 +404,9 @@
 
     <script src="../reveal.js/lib/js/head.min.js"></script>
     <script src="../reveal.js/js/reveal.min.js"></script>
-
+    <script src="../reveal.js/lib/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script>
-
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({

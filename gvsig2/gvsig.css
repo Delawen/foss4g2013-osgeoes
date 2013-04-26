@@ -13,7 +13,7 @@ Color de strong #eee8d5
 }
 
 .reveal section strong{
-  color: #eee8d5; /*para beige*/
+  color: #333333; /*para beige*/
 }
 
 .reveal section .bordes img {
@@ -70,3 +70,6 @@ table.nuevas-funcionalidades th{
 table.nuevas-funcionalidades td{
   border-bottom: 1px solid black;
 }
+
+
+.reveal section img {border:0 solid black;}
