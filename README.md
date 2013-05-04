@@ -2,7 +2,7 @@ Charlas FOSS4G Buenos Aires
 ========================================
 
 Este es el repositorio para las diapositivas de
-[mis charlas](http://jsanz.github.com/slides-201204-foss4gba/)
+[mis charlas](http://jsanz.github.com/slides-201304-foss4gba/)
 en el [FOSS4GBA](http://www.foss4g.org.ar/).
 
 [Jorge Sanz](http://jorgesanz.net)
