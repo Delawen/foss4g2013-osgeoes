@@ -47,6 +47,9 @@ Color de strong #eee8d5
 .reveal .hBoxTop{
   top:-380px !important;
 }
+.think-globally .reveal .state-background{
+  background: #002b36 url('imgs/think-globally.jpg') no-repeat center center;
+}
 .como-funciona-esto .reveal .state-background{
   background: #002b36 url('imgs/organizar.jpg') no-repeat center center;
 }
@@ -114,4 +117,8 @@ Color de strong #eee8d5
   background: #002b36 url('imgs/gracias.jpg') no-repeat center center;
 }
 
-
+.logo-foss4g{
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+}

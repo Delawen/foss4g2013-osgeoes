@@ -13,7 +13,7 @@ Color de strong #eee8d5
 }
 
 .reveal section strong{
-  color: #eee8d5; /*para beige*/
+  color: #333333; /*para beige*/
 }
 
 .reveal section .bordes img {
@@ -56,3 +56,20 @@ Color de strong #eee8d5
   background: #f7f3de url('../geoinquietos/imgs/gracias.jpg') no-repeat center center;
 }
 
+
+.logo-foss4g{
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+table.nuevas-funcionalidades th{
+  font-weight: 700;
+  border-bottom: 5px solid black;
+}
+table.nuevas-funcionalidades td{
+  border-bottom: 1px solid black;
+}
+
+
+.reveal section img {border:0 solid black;}
