@@ -9,6 +9,11 @@ Color de strong #eee8d5
 
 body {
     background-color: white;
+    color: black;
+}
+
+body ul li {
+    color: black;
 }
 
 .reveal h1, .reveal h2 {
