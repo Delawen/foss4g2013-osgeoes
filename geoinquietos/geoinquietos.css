@@ -11,7 +11,7 @@ body {
     background-color: white;
 }
 
-.reveal h1 {
+.reveal h1, .reveal h2 {
     color: #095926;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .reveal section strong{
-  color: #eee8d5; /*para moon*/
+  color: #095926; /*para moon*/
 }
 
 .reveal section .bordes img {
