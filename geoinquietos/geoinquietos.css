@@ -7,6 +7,21 @@ Color de strong #eee8d5
 
 */
 
+body {
+    background-color: white;
+}
+
+.reveal h1 {
+    color: #095926;
+}
+
+.reveal h3 {
+    color: #076F32;
+}
+
+.reveal a:not(.image) {
+    color: #0BB250;
+}
 
 .reveal section .no-back{
   border: none;
